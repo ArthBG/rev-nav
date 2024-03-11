@@ -22,7 +22,10 @@ const TabRoutes = () => {
             {
                 tabBarIcon: ({focused}) => (
                     <Feather name="home" size={24} color={focused ? "black" : "gray"} />
-                )
+                ),
+                tabBarLabel: 'Home',
+                tabBarActiveTintColor: 'black',
+                tabBarInactiveTintColor: 'gray',
             }
         
         } />
@@ -30,7 +33,10 @@ const TabRoutes = () => {
             {
                 tabBarIcon: ({focused}) => (
                     <Feather name="user" size={24} color={focused ? "black" : "gray"} />
-                )
+                ),
+                tabBarLabel: 'Profile',
+                tabBarActiveTintColor: 'black',
+                tabBarInactiveTintColor: 'gray',
             }
         
         
@@ -39,7 +45,10 @@ const TabRoutes = () => {
             {
                 tabBarIcon: ({focused}) => (
                     <MaterialCommunityIcons name="format-list-bulleted" size={24} color={focused ? "black" : "gray"} />
-                )
+                ),
+                tabBarLabel: 'Category',
+                tabBarActiveTintColor: 'black',
+                tabBarInactiveTintColor: 'gray',
             }
         }/>
         </Tab.Navigator>
